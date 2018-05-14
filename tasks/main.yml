@@ -6,7 +6,7 @@
       name: "{{item}}"
       state: present
   with_items:
-      - emacs24
+      - emacs
       - vim
       - nano
       - evince
