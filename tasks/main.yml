@@ -3,13 +3,12 @@
   become: true
   become_user: "{{ root_user }}"
   apt:
-      name: "{{item}}"
-      state: present
-  with_items:
+      name:
       - emacs
       - vim
       - nano
       - evince
+      state: present
 
 - name: install basic .vimrc
   copy:
