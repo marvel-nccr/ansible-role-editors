@@ -1,7 +1,6 @@
 ---
 - name: Install some common editors
   become: true
-  become_user: "{{ root_user }}"
   apt:
     name:
       - emacs
