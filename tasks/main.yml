@@ -1,12 +1,11 @@
----
 - name: Install some common editors
   become: true
   apt:
     name:
-      - emacs
-      - vim
-      - nano
-      - evince
+    - emacs
+    - vim
+    - nano
+    - evince
 
 - name: install basic .vimrc
   become: true
@@ -19,4 +18,4 @@
   become: true
   apt:
     name:
-      - graphicsmagick
+    - graphicsmagick
